@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>NTI- Book a test</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+	<h1>Norwich Testing Initiative</h1>
+</header>
+	<nav>
+	
+	<a href="index.html">Home</a> &nbsp;
+	<a href="test.html">Book a test</a> &nbsp;
+	<a href="covid.html">COVID information</a>&nbsp;	
+	<a href="team.html">Team</a>
+	<div class="login-container">
+    <form action="/action_page.php">
+        <input type="text" placeholder="Username" name="username">
+        <input type="text" placeholder="Password" name="psw">
+        <button type="submit">Login</button>
+    </form>
+	</div>
+	</nav>
+	
+<main>
+	<h2>Book a test</h2>
+	
+	<form method='post' action='/submit-form'>
+	<fieldset>
+		<label for="fname">First name(*):</label>
+		<input type="text" id="fname" name="FirstName" placeholder="John" accesskey="F" required><br><br>
+		
+		<label for="lname">Last name(*):</label>
+		<input type="text" id="lname" name="LastName" placeholder="Doe" accesskey="L" required><br><br>
+		
+		<label for="Email">Email address(*):</label>
+		<input type="email" id="email" name="Email" placeholder="abc@123.com" accesskey="E" required><br><br>
+		
+		<label for="phone">Phone number(*):</label>
+		<input type="tel" id="phone" name="PhoneNumber" placeholder="07123456789" accesskey="P" required><br><br>
+		
+		<label for="house">House number/name(*):</label>
+		<input type="text" id="house" name="HouseNum" placeholder="42/Orchard House" accesskey="H" required><br><br>
+		
+		<label for="postcode">Postcode(*):</label>
+		<input type="text" id="postcode" name="Postcode" placeholder="SW1W 0NY" accesskey="C" required><br><br>
+		
+		<label for="ethnicity">Ethnicity(*):</label>
+		<select id = "ethnicity" name="Ethnicity" required>
+			<optgroup label="White">
+				<option value = "gb">English, Welsh Scottish, Northern Irish or British</option>
+				<option value = "irish">Irish</option>
+				<option value = "traveller">Gypsy or Irish Traveller</option>
+				<option value = "otherwhite">Any other White background</option>
+			<optgroup label="Mixed or Multiple ethnic groups">
+				<option value = "whiteBlackCaribbean">White and Black Caribbean</option>
+				<option value = "whiteBlackAfrican">White and Black African</option>
+				<option value = "whiteAsian">White and Asian</option>
+				<option value = "otherMixed">Any other Mixed or Multiple ethnic background</option>
+			<optgroup label="Asian or Asian British">
+			    <option value = "indian">Indian</option>
+				<option value = "pakistani">Pakistani</option>
+				<option value = "bangladeshi">Bangladeshi</option>
+				<option value = "irish">Chinese</option>
+				<option value = "otherAsian">Any other Asian background</option>
+			<optgroup label="Black, African, Caribbean or Black British">
+			    <option value = "African">African</option>
+				<option value = "Caribbean">Caribbean</option>
+				<option value = "otherBlack">Any other Black, African or Caribbean background</option>
+			<optgroup label="Other ethnic group">
+			    <option value = "arab">Arab</option>
+				<option value = "other">Any other ethnic group</option>
+		</select><br><br>
+		
+		<label for="dob">Date of Birth(*):</label>
+		<input type="date" id="dob" name="dob" required><br><br>
+		
+		Gender(*):<br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label><br><br>
+		
+		<label for="firstTest">First test slot(*):</label>
+		<input type="date" id="firstTest" name="firstTest" value="2021-01-01" min="2021-01-04" max="2021-01-25"><br><br>
+		
+		<label for="secondTest">Second test slot(*):</label>
+		<input type="date" id="secondTest" name="secondTest" value="2021-01-01" min="2021-01-11" max="2021-02-01"><br><br>
+		
+		<label for="comments">Comments(*): </label><br>
+		<textarea id="comments" name="comments" rows="5" cols="35">
+		</textarea><br><br>
+		<input id="submit" type="submit" value="Send now">
+		
+	</fieldset>
+	</form>
+	
+</main>
+
+<footer>
+	<div>Copyright ©2020 Norwich Testing Initiative<br/>
+	Norwich city council, St Peters St, Norwich NR2 1NH<br/>
+	</div>
+</footer>
+</body>
+</html>
